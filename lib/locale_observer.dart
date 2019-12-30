@@ -1,0 +1,1 @@
+export 'package:locale_observer/src/locale_observer.dart';
