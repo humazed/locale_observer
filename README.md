@@ -1,5 +1,7 @@
 # locale_observer
 
+[![pub package](https://img.shields.io/pub/v/locale_observer.svg)](https://pub.dev/packages/locale_observer)
+
 Utility for detecting when the system tells the app that the user's locale has.
 
 ## Getting Started

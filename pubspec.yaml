@@ -1,6 +1,6 @@
 name: locale_observer
 description: Utility for detecting when the system tells the app that the user's locale has changed.
-version: 1.0.0+1
+version: 1.0.0+2
 homepage: https://github.com/humazed/locale_observer
 
 environment:
