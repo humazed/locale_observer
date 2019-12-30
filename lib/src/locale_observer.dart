@@ -23,9 +23,9 @@ class LocaleObserver extends StatefulWidget {
       List<Locale> locales,
       ) didChangeLocales;
 
-  /// the [child] should be [MaterialApp] or [CupertinoApp]
+  /// [child] should be [MaterialApp] or [CupertinoApp]
   /// If you want to observe changes as soon as the app open
-  /// and to continue to do to as log as the app is alive.
+  /// and to continue to do so as log as the app is alive.
   final Widget child;
 
   @override

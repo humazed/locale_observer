@@ -1,14 +1,20 @@
 # locale_observer
 
-A new Flutter plugin.
+Utility for detecting when the system tells the app that the user's locale has.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Should be above `MaterialApp` or `CupertinoApp` in the widget tree
+If you want to observe changes as soon as the app open 
+and to continue to do so as log as the app is alive.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+LocaleObserver(
+  didChangeLocales: (BuildContext context, List<Locale> locales) {
+    print("locales = $locales");
+  },
+  child: MaterialApp(
+    home: HomePage(),
+  ),
+);
+```

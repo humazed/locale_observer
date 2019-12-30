@@ -13,17 +13,29 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return LocaleObserver(
       didChangeLocales: (BuildContext context, List<Locale> locales) {
-        print("locales = ${locales}");
+        print("locales = $locales");
       },
       child: MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Plugin example app'),
-          ),
-          body: Center(
-            child: Text(''),
-          ),
-        ),
+        home: HomePage(),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  HomePageState createState() => HomePageState();
+}
+
+class HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Plugin example app'),
+      ),
+      body: Center(
+        child: Text(''),
       ),
     );
   }
